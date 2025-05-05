@@ -18,10 +18,9 @@ MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
   })
   .catch(err => {
     console.error('❌ MongoDB connection error:', err);
-  });
-
+  }); 
 // ---------- WS2 connects to WS1 ----------
-const ws1Client = new WebSocket('ws://localhost:6060');
+const ws1Client = new WebSocket('wss://rotten-tigers-drum.loca.lt');
 
 // ---------- WS2 serves UI clients ----------
 const wssToUI = new WebSocket.Server({ port: 7070 }, () => {
