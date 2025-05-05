@@ -1,0 +1,13 @@
+{
+  "name": "websocket-chat",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "mongoose": "^7.5.0",
+    "mssql": "^11.0.1",
+    "ws": "^8.18.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
