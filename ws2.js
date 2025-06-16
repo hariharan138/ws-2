@@ -2,6 +2,7 @@ const WebSocket = require('ws');
 const { MongoClient } = require('mongodb');
 
 // ---------- MongoDB Setup ----------
+// uncommand at the time of using 
 // const mongoUrl = 'mongodb+srv://hariharan98704:LecKPWQPSqzetLu6@cluster1.lf4un.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1';
 // const dbName = 'ws2db';
 const collectionName = 'messages';
