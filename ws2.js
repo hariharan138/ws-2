@@ -2,8 +2,8 @@ const WebSocket = require('ws');
 const { MongoClient } = require('mongodb');
 
 // ---------- MongoDB Setup ----------
-const mongoUrl = 'mongodb+srv://hariharan98704:LecKPWQPSqzetLu6@cluster1.lf4un.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1';
-const dbName = 'ws2db';
+// const mongoUrl = 'mongodb+srv://hariharan98704:LecKPWQPSqzetLu6@cluster1.lf4un.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1';
+// const dbName = 'ws2db';
 const collectionName = 'messages';
 
 let db, messagesCollection;
@@ -20,7 +20,7 @@ MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
     console.error('❌ MongoDB connection error:', err);
   }); 
 // ---------- WS2 connects to WS1 ----------
-const ws1Client = new WebSocket('wss://ws2relayserver.loca.lt');
+// const ws1Client = new WebSocket('wss://ws2relayserver.loca.lt');
 
 // ---------- WS2 serves UI clients ----------
 const wssToUI = new WebSocket.Server({ port: 7070 }, () => {
